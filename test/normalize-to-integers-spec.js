@@ -24,6 +24,10 @@ describe('normalizeToIntegers()', function() {
     assert.deepStrictEqual(numbers[1], normalizeToIntegers(numbers[0], _.sum(numbers[1])));
     assert.deepStrictEqual(numbers[0], normalizeToIntegers(numbers[1], _.sum(numbers[0])));
   });
+  it('edge case', function () {
+    assert.deepStrictEqual([12, 12, 13, 63], normalizeToIntegers([10, 10, 10, 50], 100));
+    assert.deepStrictEqual([9, 8, 8, 8, 67], normalizeToIntegers([10, 10, 10, 10, 80], 100));
+  });
   describe('error should be less than 1', function () {
     this.timeout(0);  // disable timeout
 
