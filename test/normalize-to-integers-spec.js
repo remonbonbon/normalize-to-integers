@@ -44,6 +44,7 @@ describe('normalizeToIntegers()', function() {
       try {
         assert.strictEqual(target, _.sum(result));
         assert(maxDiff < 1);
+        assert(_.every(result, (n) => 0 <= n));
       } catch (e) {
         console.log(inputs, target);
         console.log(result);
