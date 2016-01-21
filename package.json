@@ -1,0 +1,19 @@
+{
+  "name": "normalize-to-integers",
+  "version": "1.0.0",
+  "description": "Normalize number array to integer array.",
+  "author": "remonbonbon",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remonbonbon/normalize-to-integers.git"
+  },
+  "license": "ISC",
+  "scripts": {
+    "test": "$(npm bin)/mocha test/*-spec.js"
+  },
+  "devDependencies": {
+    "lodash": "^4.0.0",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {}
+}
